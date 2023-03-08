@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contacts{% endblock %}
+
+{% block body %}
+    <h1 class="text-center my-5">Vos contacts</h1>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact.getPrenom() }}</td>
+                    <td>{{ contact.getNom() }}</td>
+                    <td>{{ contact.getEmail() }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ path('login') }}" class="btn btn-primary">Quitter</a>
+    </div>
+
+{% endblock %}

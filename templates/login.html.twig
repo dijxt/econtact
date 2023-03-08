@@ -1,0 +1,30 @@
+{# templates/login.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+    <h1 class="text-center my-5">Connexion</h1>
+
+    <div class="container">
+        {% if error is defined %}
+            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+        {% endif %}
+
+        <form method="post">
+            {{ form_start(form) }}
+            <div class="form-group mb-2">
+                {{ form_label(form.nom, 'Nom') }}
+                {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.num, 'Numéro') }}
+                {{ form_widget(form.num, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Se connecter</button>
+            {{ form_end(form) }}
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,7 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+login:
+    path: /
+    controller: App\Controller\LoginController::login
