@@ -1,10 +1,13 @@
-Rapport de projet : Création d'un site de connexion avec Symfony
-Ce rapport présente les différentes étapes de la création d'un site web de connexion en utilisant le framework Symfony.
-Introduction
+# Rapport de projet : Création d'un site de connexion avec Symfony
+Ce rapport présente les différentes étapes de la création d'un site web de connexion en utilisant le framework Symfony. 
+
+##Introduction
 De nos jours, les sites web de connexion sont de plus en plus courants. Ils permettent aux utilisateurs de se connecter à leur compte personnel, de consulter leurs informations et d'effectuer des actions liées à leur compte. Dans ce rapport, nous présentons les différentes étapes de développement pour créer un site web de connexion en utilisant le framework Symfony.
-Objectif du projet
+
+##Objectif du projet
 L'objectif de notre projet était de créer un site web de connexion où les utilisateurs peuvent se connecter et accéder à leur profil personnel. Nous voulions créer un site web sécurisé et performant, avec des fonctionnalités supplémentaires telles que la récupération de mot de passe et la déconnexion.
-Étapes de développement
+Étapes de développement  
+
 Le projet a été développé en suivant les étapes suivantes :
 Configuration de l'environnement de développement : Tout d'abord, nous avons configuré notre environnement de développement en installant Symfony et en créant un nouveau projet. Nous avons choisi Symfony car il s'agit d'un framework puissant et facile à utiliser pour le développement web.
 Création de la base de données : Nous avons ensuite créé une base de données pour stocker les informations des utilisateurs. Nous avons utilisé Doctrine, le gestionnaire de base de données de Symfony, pour créer les tables nécessaires. Nous avons également créé des relations entre les tables pour permettre une utilisation efficace de la base de données.
