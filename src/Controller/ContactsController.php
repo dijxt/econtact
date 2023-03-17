@@ -29,7 +29,7 @@ class ContactsController extends AbstractController
             'id_nom' => $id_nom
         ]);
 
-        $contacts = [];
+        //$contacts = $utilisateur->getContacts();
 
         foreach ($numContacts as $contact) {
             $contacts[] = $this->entityManager->getRepository(Utilisateur::class)->find($contact->id_contact);
